@@ -31,7 +31,7 @@ body {
   text-align: center;
 }
 
-.main-index {
+.hero {
   background-color: white;
   background-image: url("../images/index-main/hero-background.jpg");
   background-size: 100% auto;
@@ -120,7 +120,7 @@ body {
 
 .subscribe{
   background-color: grey;
-  background-image: url(../images/index-main/subscribe-background.jpg);
+  background-image: url("../images/index-main/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -196,7 +196,7 @@ body {
 }
 
 .pagination-link{
-  color: #000000;
+  color:#FFFFFF;
   text-align: center;
   font-size: 20px;
   font-weight: 700;
@@ -206,7 +206,7 @@ body {
 }
 
 .pagination-current{
-  color:#FFFFFF;
+  color: #000000;
 }
 
 .footer-phone{
