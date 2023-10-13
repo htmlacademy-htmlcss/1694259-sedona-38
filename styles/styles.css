@@ -14,12 +14,40 @@
   font-display: swap;
 }
 
-body {
+
+html{
+  height: 100%;
+}
+
+body{
+  margin: 0 auto;
+  display: flex;
+  width: 1200px;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+.navigation{
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.navigation-list{
+  width: 440px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-user{
+  width: 310px;
 }
 
 .navigation-link {
@@ -36,6 +64,12 @@ body {
   background-image: url("../images/index-main/hero-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  height: 485px;
+}
+
+.hero-logo{
+  display: block;
+  margin: 0 auto;
 }
 
 .button{
@@ -45,6 +79,20 @@ body {
   line-height: 20px;
   text-transform: uppercase;
 
+}
+
+.advantages-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages-list-with-icons{
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
 }
 
 .advantages-title{
@@ -62,6 +110,10 @@ body {
   line-height: 26px;
 }
 
+.advantages-item{
+  width: 400px;
+}
+
 .advantages-item-title {
   color:#000000;
   text-align: center;
@@ -77,6 +129,11 @@ body {
 
 .advantages-item-extra {
   color: #FFFFFF;
+}
+
+.advantages-item-icon{
+  display: block;
+  margin: 0 auto;
 }
 
 .search-title{
@@ -217,4 +274,24 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
+  width: 331px;
+}
+
+.main-container{
+  flex-grow: 1;
+}
+
+.page-footer-container{
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer-social-list{
+  width: 142px;
+}
+
+.footer-academy-logo{
+  margin-left: auto;
 }
