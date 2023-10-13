@@ -114,6 +114,15 @@ body{
   width: 400px;
 }
 
+.advantages-item-with-pic{
+  display: flex;
+}
+
+
+.advantages-item-content{
+  width: 400px;
+}
+
 .advantages-item-title {
   color:#000000;
   text-align: center;
@@ -157,6 +166,8 @@ body{
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0 auto;
+  display: block;
 }
 
 .subscribe-title{
@@ -194,6 +205,15 @@ body{
   background-image: url("../images/catalog-main/filter-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.filters{
+  display: flex;
+}
+
+.filter-group{
+  width: 150px;
+  margin-right: 70px;
 }
 
 .breadcrumbs-link{
@@ -294,4 +314,21 @@ body{
 
 .footer-academy-logo{
   margin-left: auto;
+}
+
+.hotel-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-card{
+  width: 300px;
+  margin-right: 20px;
+}
+
+.subscribe-email-form-wrapper{
+  text-align: center;
 }
