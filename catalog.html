@@ -9,7 +9,7 @@
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <a class="navigation-link" href="index.html">
+      <a class="navigation-link-logo" href="index.html">
         <img class="navigation-logo" src="images/header/logo_nav.svg" alt="Логотип города Седона" width="140" height="70">
       </a>
       <ul class="navigation-list">
@@ -40,7 +40,7 @@
       </ul>
     </nav>
   </header>
-  <main class="main-container">
+  <main class="main-container catalog-main-container">
     <section class="filters-panel">
       <h1 class="filters-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -113,29 +113,32 @@
     </section>
 
     <section class="catalog">
-      <h2 class="catalog-title">Найдено гостиниц: <span class="num-of-hotels-found">38</span></h2>
-      <select class="select-control" aria-label="Сортировка" name="select-contol">
-        <option class="select-item" value="popular">Сначала популярные</option>
-        <option class="select-item" value="cheap">Сначала дешёвые</option>
-        <option class="select-item" value="expensive">Сначала дорогие</option>
-      </select>
-      <ul class="view-list">
-        <li class="view-item">
-          <a class="view-link" href="#" aria-label="Показать список отелей в виде таблицы">
-            <img class="view-icon" src="images/catalog-main/view-icon-1.svg" alt="Иконка таблицы" width="16" height="14">
-          </a>
-        </li>
-        <li class="view-item">
-          <a class="view-link" href="#" aria-label="Показать список отелей в виде слайдов">
-            <img class="view-icon" src="images/catalog-main/view-icon-2.svg" alt="Иконка слайда" width="16" height="14">
-          </a>
-        </li>
-        <li class="view-item">
-          <a class="view-link" href="#" aria-label="Показать список отелей в виде списка">
-            <img class="view-icon" src="images/catalog-main/view-icon-3.svg" alt="Иконка списка" width="16" height="14">
-          </a>
-        </li>
-      </ul>
+      <div class="catalog-title-wrapper">
+        <h2 class="catalog-title">Найдено гостиниц: <span class="num-of-hotels-found">38</span></h2>
+        <select class="select-control" aria-label="Сортировка" name="select-contol">
+          <option class="select-item" value="popular">Сначала популярные</option>
+          <option class="select-item" value="cheap">Сначала дешёвые</option>
+          <option class="select-item" value="expensive">Сначала дорогие</option>
+        </select>
+        <ul class="view-list">
+
+          <li class="view-item">
+            <a class="view-link" href="#" aria-label="Показать список отелей в виде таблицы">
+              <img class="view-icon" src="images/catalog-main/view-icon-1.svg" alt="Иконка таблицы" width="16" height="14">
+            </a>
+          </li>
+          <li class="view-item">
+            <a class="view-link" href="#" aria-label="Показать список отелей в виде слайдов">
+              <img class="view-icon" src="images/catalog-main/view-icon-2.svg" alt="Иконка слайда" width="16" height="14">
+            </a>
+          </li>
+          <li class="view-item">
+            <a class="view-link" href="#" aria-label="Показать список отелей в виде списка">
+              <img class="view-icon" src="images/catalog-main/view-icon-3.svg" alt="Иконка списка" width="16" height="14">
+            </a>
+          </li>
+        </ul>
+      </div>
       <ul class="hotel-list">
         <li class="hotel-card">
           <img class="hotel-card-img" src="images/catalog-main/catalog-hotel-1.jpg" alt="Фото звёздного неба, которое видно через ущелье" width="300" height="212">
@@ -206,32 +209,34 @@
           </ul>
         </li>
       </ul>
-      <ul class="pagination">
-        <li class="pagination-item">
-          <a class="pagination-link pagination-current" aria-label="Переход на первую страницу каталога">1</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#" aria-label="Переход на вторую страницу каталога">2</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#" aria-label="Переход на третью страницу каталога">3</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#" aria-label="Переход на четвёртую страницу каталога">4</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#" aria-label="Развернуть список доступным для перехода страниц">...</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#" aria-label="Переход на десятую страницу каталога">10</a>
-        </li>
-      </ul>
+      <div class="pagination-wrapper">
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current" aria-label="Переход на первую страницу каталога">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#" aria-label="Переход на вторую страницу каталога">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#" aria-label="Переход на третью страницу каталога">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#" aria-label="Переход на четвёртую страницу каталога">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#" aria-label="Развернуть список доступным для перехода страниц">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#" aria-label="Переход на десятую страницу каталога">10</a>
+          </li>
+        </ul>
+    </div>
     </section>
 
 
     <section class="subscribe-catalog">
-      <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-      <p class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <h2 class="subscribe-title subscribe-catalog-titile">Подпишитесь на рассылку</h2>
+      <p class="subscribe-subtitle subscribe-catalog-subtile">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <div class="subscribe-email-form-wrapper">
         <form class="subscribe-email-form" action="https://echo.htmlacademy.ru/courses" method="post">
           <input class="subscribe-form-field" type="text" name="email" id="email-field" placeholder="Ваш e-mail" required>
