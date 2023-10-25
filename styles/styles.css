@@ -299,10 +299,28 @@ body{
 }
 
 .hotel-card-title{
+  grid-column: 1/-1;
   color: #000000;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  margin:0;
+}
+
+.card-type-of-housing{
+  margin:0;
+
+}
+
+.hotell-card-buttons-list{
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: min-content min-content 20px;
+  column-gap: 20px;
+  row-gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-price{
@@ -312,18 +330,25 @@ body{
 
 .card-button-detail{
   color: #FFFFFF;
+  grid-column: 1/-1
 }
 
 .card-button-favorites{
   color: #FFFFFF;
 }
 
+.button-item:last-child{
+  grid-column: 2;
+  grid-row: 2;
+}
 .hotel-card-rating-text{
   color: #333333;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin:0;
+  padding:0;
 }
 
 .pagination-link{
@@ -403,19 +428,30 @@ body{
 }
 
 .hotel-list{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
   width: 1060px;
   margin: 0 auto;
+  margin-bottom: 80px;
   padding: 0;
   list-style: none;
 }
 
 .hotel-card{
-  width: 300px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 212px min-content auto;
+  column-gap: 20px;
+  row-gap: 16px;
+  width: 340px;
   margin-right: 20px;
 }
+
+.hotel-card-img{
+  grid-column: 1/-1;
+}
+
 
 .subscribe-email-form-wrapper{
   text-align: center;
