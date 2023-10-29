@@ -36,8 +36,14 @@ body{
   display: flex;
   align-items: end;
   width: 1060px;
+  height: 64px;
   margin: 0 auto;
   justify-content: space-between;
+}
+
+.navigation-logo{
+  margin-bottom: -9px;
+  position: relative;
 }
 
 .navigation-list{
@@ -69,6 +75,11 @@ body{
 
 .navigation-button{
   vertical-align: none;
+  width: 160px;
+  color: white;
+  background-color: #756157;
+  border-radius:4px;
+
 }
 
 .main-index{
@@ -88,11 +99,18 @@ body{
 }
 
 .button{
+  box-sizing: border-box;
+  padding: 8px 0;
+  border: none;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  border-radius:4px;
+  font-family: "PT Sans", "Roboto", sans-serif;
 
 }
 
@@ -106,6 +124,7 @@ body{
 
 .advantages-list-with-icons{
   margin: 0 auto;
+  padding: 0;
   display: flex;
   list-style: none;
 }
@@ -176,6 +195,10 @@ body{
   margin: 0 auto;
 }
 
+.search{
+  padding: 90px 0 96px 0;
+}
+
 .search-title{
   color: #000000;
   text-align: center;
@@ -184,7 +207,7 @@ body{
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  padding: 96px 0 20px 0;
+  padding: 0 0 20px 0;
 }
 
 .search-subtitle{
@@ -195,17 +218,30 @@ body{
   padding: 0;
 }
 
+
+
 .search-button{
   color: #fff;
   font-size: 20px;
-  font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
   margin: 0 auto;
   display: block;
-  margin-bottom: 96px;
+  background-color: #756157;
+  padding: 8px 50px;
+  font-style: normal;
+  font-weight: 700;
 }
 
+.subscribe-button{
+  background-color: #82B3D3;
+  padding: 8px 50px;
+  border-radius: 0;
+  color:#FFFFFF;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 36px; /* 180% */
+}
 .subscribe-title{
   color:#FFFFFF;
   text-align: center;
@@ -214,7 +250,7 @@ body{
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  padding:96px 0 0 0;
+  padding:0;
   margin-bottom: 20px;
 }
 
@@ -235,11 +271,16 @@ body{
   color: #000000;
 }
 
+.subscribe-catalog{
+  padding: 96px 0 104px 0;
+}
+
 .subscribe{
   background-color: grey;
   background-image: url("../images/index-main/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  padding: 96px 0 104px 0;
 }
 
 .filters-title{
@@ -248,24 +289,37 @@ body{
   font-weight: 700;
   line-height: 78px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 8px 0;
 }
 
 .filters-panel{
+  box-sizing: border-box;
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 1060px;
   margin: 0 auto;
+  padding-bottom: 70px;
+  margin-top: 35px;
 }
 
 .filters{
   display: flex;
-  padding-bottom: 70px;
+  justify-content: space-between;
+
 }
 
 .filter-group{
   width: 150px;
-  margin-right: 70px;
+  border: none;
+  padding: 0;
+
+}
+
+
+.breadcrumbs{
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
 }
 
 .breadcrumbs-link{
@@ -281,11 +335,36 @@ body{
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
+  margin-bottom: 32px;
+}
+
+.catalog-filter-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-group-buttons-wrapper{
+  display: flex;
+  flex-direction: column;
+
 }
 
 .control{
   color: #FFFFFF;
   line-height: 23px;
+}
+.button-filter-apply{
+
+  height: 40px;
+  padding: 8px 50px;
+  background-color: #82B3D3;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.button-filter-reset{
+  padding: 8px 50px;
 }
 
 .catalog-title{
@@ -455,7 +534,6 @@ body{
 
 .subscribe-email-form-wrapper{
   text-align: center;
-  padding-bottom: 104px;
 }
 
 .visually-hidden{
@@ -474,7 +552,6 @@ body{
   justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
-  padding-top: 50px;
   margin-bottom: 40px;
 }
 
