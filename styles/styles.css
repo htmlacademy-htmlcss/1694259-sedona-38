@@ -47,6 +47,7 @@ body{
 }
 
 .navigation-list{
+
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -81,6 +82,37 @@ body{
   border-radius:4px;
 
 }
+
+.navigation-button:hover,
+.search-button:hover,
+.card-button-detail:hover{
+  background-color: #615048;
+  outline: none;
+}
+
+.navigation-button:focus,
+.search-button:focus,
+.card-button-detail:focus{
+  background-color: #615048;
+  outline: none;
+}
+
+
+.navigation-button:active,
+.search-button:active,
+.card-button-detail:active{
+  background-color: #756157;
+  color: #FFFFFF4D;
+}
+
+.navigation-button:disabled,
+.search-button:disabled,
+.card-button-detail:disabled{
+  background-color: #FFFFFF;
+  color: #E5E5E5;
+}
+
+
 
 .main-index{
   color:#000000;
@@ -229,6 +261,7 @@ body{
 }
 
 .advantages-item-extra {
+  margin-bottom: -2px;
   color: #FFFFFF;
 }
 
@@ -284,6 +317,29 @@ body{
   line-height: 36px; /* 180% */
   border-radius: 0 4px 4px 0;
 }
+
+.subscribe-button:hover,
+.button-filter-apply:hover,
+.card-button-favorites:hover,
+.pagination-link:hover{
+  background-color: #68A2CA;
+}
+
+.subscribe-button:focus,
+.button-filter-apply:focus,
+.card-button-favorites:focus,
+.pagination-link:focus{
+  background-color: #68A2CA;
+}
+
+.subscribe-button:active,
+.button-filter-apply:active,
+.card-button-favorites:active,
+.pagination-link:active{
+  background-color: #82B3D3;
+  color: #FFFFFF4D;
+}
+
 .subscribe-title{
   color:#FFFFFF;
   text-align: center;
@@ -344,6 +400,10 @@ body{
   font-weight: 400;
 }
 
+.catalog-subscribe-form-field{
+  background-color: #F2F2F2;
+}
+
 
 .filters-title{
   color: #FFFFFF;
@@ -351,7 +411,7 @@ body{
   font-weight: 700;
   line-height: 78px;
   margin: 0;
-  padding: 35px 0 8px 0;
+  padding: 0;
 }
 
 .filters-panel{
@@ -364,13 +424,14 @@ body{
   width: 1060px;
   margin: 0 auto;
   padding-bottom: 70px;
+  padding-top: 35px;
 }
 
 .range-scale{
   display: block;
   position: relative;
   height: 4px;
-  top: 0;
+  top: 10px;
   background-color: grey;
   border-radius: 2px;
 }
@@ -418,6 +479,7 @@ body{
 
 .filters-cost-and-buttons-wrapper{
   display: flex;
+  margin-left: auto;
 }
 
 .filters-cost-and-buttons-wrapper .filter-group{
@@ -430,7 +492,8 @@ body{
 }
 .filters{
   display: flex;
-  justify-content: space-between;
+  height: 163px;
+
 
 }
 
@@ -442,15 +505,49 @@ body{
   box-sizing: border-box;
   margin-right: 2px;
   outline: none;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.range-wrapper-inputs::after{
+  font-family: inherit;
+  content: "от";
+  color: #000000;
+  opacity: 0.3;
+  font-size: 18px;
+  position: absolute;
+  width: 17px;
+  height: 24px;
+  left:106px;
+  top: 12px;
+}
+
+.range-wrapper-inputs::before{
+  font-family: inherit;
+  content: "до";
+  color: #000000;
+  opacity: 0.3;
+  font-size: 18px;
+  position: absolute;
+  width: 17px;
+  height: 24px;
+  left:252px;
+  top: 12px;
 }
 
 .filter-field::placeholder{
   text-align: right;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .range-wrapper-inputs{
   display: flex;
   margin-bottom: 36px;
+  position: relative;
 }
 
 
@@ -462,6 +559,71 @@ body{
 
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+/* Mark */
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color:white;
+  border-radius: 4px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 20px;
+    height: 12px;
+    background-image: url("/images/catalog-main/checkbox.svg");
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    /* content: url("/images/catalog-main/checkbox.svg"); */
+
+}
+
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
+
+.control:hover,
+.contrlol:active{
+  opacity: 0.6;
+}
+
+.control-input:focus + .control-mark{
+  outline: 3px solid #83B3D3;
+}
+
+.control:disabled{
+  opacity: 0.4;
+}
+
+.cotalog-filter-item{
+  margin-bottom: 16px;
+}
+
 .price-up-to{
   border-radius: 0 4px 4px 0;
 }
@@ -471,11 +633,29 @@ body{
 }
 
 
+
 .breadcrumbs{
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0 0 40px 0;
+}
+.breadcrumbs-item{
+  margin-right: 27px;
+}
+
+.breadcrumbs-homepage-icon{
+  display: block;
+  padding-top: 6px;
+  position: relative;
+}
+
+.breadcrumbs-link-icon::after{
+  content: url("/images/catalog-main/breadcrumbs-arrow-icon.svg");
+  position: absolute;
+  margin-left: 22px;
+  margin-top: -18px;
+
 }
 
 .breadcrumbs-link{
@@ -503,7 +683,7 @@ body{
 .filter-group-buttons-wrapper{
   display: flex;
   flex-direction: column;
-  padding-top: 56px;
+  margin-top: 56px;
 
 }
 
@@ -513,7 +693,7 @@ body{
 }
 .button-filter-apply{
   color: white;
-  height: 40px;
+  height: 36px;
   padding: 8px 50px;
   background-color: #82B3D3;
   text-align: center;
@@ -530,13 +710,13 @@ body{
 
 }
 .catalog-title{
+  padding: auto 0;
   color: #000000;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  padding: 0;
 }
 
 .hotel-card-title{
@@ -608,13 +788,32 @@ body{
 }
 
 .pagination-link{
-  color:#FFFFFF;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 700;
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 24px;
   line-height: 36px;
-  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #82B3D3;
   text-decoration: none;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.more-pages-link:active,
+.more-pages-link:hover,
+.more-pages-link:focus,
+.more-pages-link:disabled,
+.more-pages-link{
+  color: black;
+  background-color: white;
+}
+
+
+.two-nums-pagination{
+  padding: 12px 18.5px;
 }
 
 .pagination{
@@ -627,9 +826,9 @@ body{
 .pagination-item{
   margin-right: 8px;
   list-style: none;
-  background-color: #82B3D3;
-  padding: 11.364px 18.545px 12.636px 18.455px;
 }
+
+
 
 
 .pagination-current{
@@ -688,8 +887,17 @@ body{
   margin-bottom: 80px;
   padding: 0;
   list-style: none;
+  position: relative;
 }
 
+.hotel-list::after{
+  bottom: -40px;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #E6E6E6;
+}
 .hotel-card{
   display: grid;
   grid-template-columns: 140px 140px;
@@ -726,18 +934,106 @@ body{
 
 .catalog-title-wrapper{
   display: flex;
-  justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
   margin-bottom: 40px;
+  gap: 70px;
+  align-items: center;
 }
 
 .view-list{
+  margin:0;
+  padding: 0;
   display: flex;
+  gap: 8px;
   list-style: none;
   justify-content: space-between;
 }
 
 .view-link{
-  margin-right: 36px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 14px 12px;
+  display: block;
+}
+
+.current-view{
+  border: 2px solid black;
+}
+
+.view-link:hover{
+  border-color: black
+}
+
+.view-link:focus{
+  border-color: #68A2CA;
+}
+
+.view-link:active{
+  border-color: black
+}
+
+.view-icon{
+  display: block;
+}
+.view-item{
+  align-self: flex-start;
+}
+
+.nav-underline::after{
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  top: 19px;
+  border-bottom: 2px solid #756257;
+}
+
+.nav-underline{
+  margin-bottom: -2px;
+}
+
+
+.select-control{
+  appearance: none;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+  padding: 14px 20px 14px 20px;
+  box-sizing: border-box;
+  width: 290px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+
+}
+
+.select-control:hover{
+  border-color: #68A2CA;
+  cursor: pointer;
+}
+
+.select-control:focus{
+  border-color: #68A2CA;
+}
+
+.select-control:disabled{
+  border-color: #E5E5E5;
+  color: #0000004D;
+}
+
+
+
+.select-menu::after{
+  content: url("/images/catalog-main/arrow.svg");
+  margin-top: 13px;
+  margin-left: -33px;
+  position: absolute;
+  display: inline;
+}
+
+.select-menu{
+  margin-left: auto;
 }

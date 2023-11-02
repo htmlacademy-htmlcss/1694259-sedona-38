@@ -20,7 +20,7 @@
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link nav-underline" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
@@ -62,20 +62,23 @@
                 <ul class="catalog-filter-list">
                 <li class="cotalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="pool">
-                    Бассейн
+                    <input class="visually-hidden control-input" type="checkbox" name="pool">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="cotalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="parking">
-                    Парковка
+                    <input class="visually-hidden control-input" type="checkbox" name="parking">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="cotalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi">
-                    Wi-Fi
+                    <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -85,20 +88,23 @@
                 <ul class="catalog-filter-list">
                   <li class="cotalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-of-housing" value="hotel">
-                      Гостиница
+                      <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="hotel">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="cotalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-of-housing" value="motel">
-                      Мотель
+                      <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="motel">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="cotalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-of-housing" value="apartments">
-                      Апартаменты
+                      <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="apartments">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -109,10 +115,10 @@
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <div class="range">
                 <div class="range-wrapper-inputs">
-                  <h3 class="visually-hidden">Фильтр по стоимости жилья</h3>
-                  <input class="filter-field price-from" type="text" name="price-from" id="price-from-field" value="0" placeholder="от">
+                  <h3 class="visually-hidden ">Фильтр по стоимости жилья</h3>
+                  <input class="filter-field price-from" type="text" name="price-from" id="price-from-field" value="0">
                   <!-- <label for="price-from-field" class="static-value">Get this label to appear</label> -->
-                  <input class="filter-field price-up-to" type="text" name="price-up-to" id="price-up-to-field" value="9000" placeholder="до">
+                  <input class="filter-field price-up-to" type="text" name="price-up-to" id="price-up-to-field" value="9000">
                 </div>
 
                 <div class="range-scale">
@@ -139,15 +145,17 @@
     <section class="catalog">
       <div class="catalog-title-wrapper">
         <h2 class="catalog-title">Найдено гостиниц: <span class="num-of-hotels-found">38</span></h2>
-        <select class="select-control" aria-label="Сортировка" name="select-contol">
-          <option class="select-item" value="popular">Сначала популярные</option>
-          <option class="select-item" value="cheap">Сначала дешёвые</option>
-          <option class="select-item" value="expensive">Сначала дорогие</option>
-        </select>
+        <div class="select-menu">
+          <select class="select-control" aria-label="Сортировка" name="select-contol">
+            <option class="select-item" value="popular">Сначала популярные</option>
+            <option class="select-item" value="cheap">Сначала дешёвые</option>
+            <option class="select-item" value="expensive">Сначала дорогие</option>
+          </select>
+        </div>
         <ul class="view-list">
 
           <li class="view-item">
-            <a class="view-link" href="#" aria-label="Показать список отелей в виде таблицы">
+            <a class="view-link current-view" href="#" aria-label="Показать список отелей в виде таблицы">
               <img class="view-icon" src="images/catalog-main/view-icon-1.svg" alt="Иконка таблицы" width="16" height="14">
             </a>
           </li>
@@ -248,10 +256,10 @@
             <a class="pagination-link" href="#" aria-label="Переход на четвёртую страницу каталога">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#" aria-label="Развернуть список доступным для перехода страниц">...</a>
+            <a class="pagination-link more-pages-link" href="#" aria-label="Развернуть список доступным для перехода страниц">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#" aria-label="Переход на десятую страницу каталога">10</a>
+            <a class="pagination-link two-nums-pagination" href="#" aria-label="Переход на десятую страницу каталога">10</a>
           </li>
         </ul>
     </div>
@@ -263,7 +271,7 @@
       <p class="subscribe-subtitle subscribe-catalog-subtile">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <div class="subscribe-email-form-wrapper">
         <form class="subscribe-email-form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <input class="subscribe-form-field" type="text" name="email" id="email-field" placeholder="Ваш e-mail" required>
+          <input class="subscribe-form-field catalog-subscribe-form-field" type="text" name="email" id="email-field" placeholder="Ваш e-mail" required>
           <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
       </div>
