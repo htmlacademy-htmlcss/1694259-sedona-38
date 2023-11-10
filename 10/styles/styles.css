@@ -465,7 +465,7 @@ body{
 }
 
 .filters-panel{
-  background-image: url("/images/catalog-main/filter-background.jpg");
+  background-image: url("../images/catalog-main/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-color: #82B3D3;
@@ -720,7 +720,7 @@ body{
 }
 
 .breadcrumbs-link-icon::after{
-  content: url("/images/catalog-main/breadcrumbs-arrow-icon.svg");
+  content: url("../images/catalog-main/breadcrumbs-arrow-icon.svg");
   position: absolute;
   margin-left: 22px;
   margin-top: -18px;
@@ -1221,7 +1221,7 @@ body{
 
 
 .select-menu::after{
-  content: url("/images/catalog-main/arrow.svg");
+  content: url("../images/catalog-main/arrow.svg");
   margin-top: 13px;
   margin-left: -33px;
   position: absolute;
