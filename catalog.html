@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог Гостиниц</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="/images/favicon.png" type="image/x-icon">
 </head>
 <body>
+  <div class="panel">
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-link-logo" href="index.html">
@@ -29,16 +31,14 @@
             <img class="navigation-icon"  src="images/header/search-icon.svg" alt="Иконка в виде лупы" width="18" height="18">
           </a>
         </li>
-        <li class="navigation-item green-circle">
+        <li class="navigation-item navigation-item-with-counter">
           <a class="navigation-link user-navigation-link" href="#" aria-label="Переход на страницу с избранными отелями">
             <img class="navigation-icon" src="images/header/heart-icon.svg" alt="Иконка в виде сердца" width="18" height="17">
             <span class="favorites-counter">12</span>
           </a>
         </li>
         <li class="navigation-item">
-          <form action="modal.html">
-            <button class="button navigation-button" type="submit" >Хочу сюда!</button>
-          </form>
+          <button class="button navigation-button" type="submit" >Хочу сюда!</button>
         </li>
       </ul>
     </nav>
@@ -383,5 +383,6 @@
       </a>
   </div>
   </footer>
+  </div>
 </body>
 </html>
