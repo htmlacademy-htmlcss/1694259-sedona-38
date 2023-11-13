@@ -751,7 +751,7 @@ body{
 }
 
 .breadcrumbs-link-icon::after{
-  content: url("/images/catalog-main/breadcrumbs-arrow-icon.svg");
+  content: url("../images/catalog-main/breadcrumbs-arrow-icon.svg");
   position: absolute;
   margin-left: 22px;
   margin-top: -18px;
@@ -1252,7 +1252,7 @@ body{
 
 
 .select-menu::after{
-  content: url("/images/catalog-main/arrow.svg");
+  content: url("../images/catalog-main/arrow.svg");
   margin-top: 13px;
   margin-left: -33px;
   position: absolute;
