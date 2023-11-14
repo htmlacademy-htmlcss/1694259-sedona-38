@@ -142,7 +142,7 @@ body{
 
 .hero{
   background-image: url("../images/index-main/hero-background.jpg");
-  background-size: 100% auto;
+  background-size: 100% 485px;
   background-repeat: no-repeat;
   padding-top: 51px;
   padding-bottom: 82px;
@@ -161,10 +161,13 @@ body{
 }
 
 .hero::after{
+  content:"";
   position:absolute;
-  content: url("../images/index-main/hero-figure.svg");
-  display: block;
-  bottom: -4px;
+  background: url("../images/index-main/hero-figure.svg") 50% 100% no-repeat;
+  height: 60px;
+  width: 100%;
+  left:0;
+  bottom: -1px;
 }
 
 .button{
