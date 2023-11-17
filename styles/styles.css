@@ -1123,7 +1123,7 @@ body {
 .social-link {
   display: block;
   box-sizing: border-box;
-  padding: 13px 10px;
+  padding: 13px 13px;
 }
 
 .social-link:hover .social-icon {
@@ -1518,6 +1518,10 @@ input[type=number] {
   cursor: pointer;
 }
 
+.close-button:focus{
+  outline: 3px solid #83B3D3;
+}
+
 .close-button:active .close-button-icon {
   opacity: 0.3;
 }
@@ -1587,7 +1591,7 @@ input[type=number] {
   display: block;
   position: absolute;
   left: 12px;
-  top: 7px;
+  top: 6px;
 }
 
 .popover-label-icon {
