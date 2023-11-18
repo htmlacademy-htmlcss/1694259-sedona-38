@@ -94,7 +94,7 @@ body {
 .navigation-user {
   width: 176px;
   margin-left: auto;
-  justify-content: end;
+  justify-content: flex-end
 }
 
 .navigation-link-logo {
@@ -387,6 +387,7 @@ body {
   padding: 8px 50px;
   font-style: normal;
   font-weight: 700;
+  max-width: 592px;
 }
 
 .subscribe-button {
@@ -1201,7 +1202,7 @@ body {
   width: 1060px;
   margin: 0 auto;
   margin-bottom: 37px;
-  gap: 85px;
+  gap: 70px;
   align-items: center;
   margin-right: auto;
 }
@@ -1258,7 +1259,6 @@ body {
 }
 
 .select-control {
-  appearance: none;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   background-color: transparent;
@@ -1271,6 +1271,7 @@ body {
   line-height: 21px;
   color: #333333;
   max-width: 410px;
+  -webkit-appearance:none;
 }
 
 .select-control .select-item {
@@ -1287,12 +1288,17 @@ body {
   color: rgba(0, 0, 0, 0.3)
 }
 
+.select-menu{
+  position: relative;
+}
+
 .select-menu::after {
   content: url("../images/catalog-main/arrow.svg");
-  margin-top: 13px;
-  margin-left: -33px;
-  position: relative;
+  position: absolute;
   display: inline;
+  top: 13px;
+  right:20px;
+  pointer-events: none;
 }
 
 .modal-container {
@@ -1396,6 +1402,7 @@ input[type=number] {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  padding-right: 45px;
 }
 
 .search-options {
@@ -1527,14 +1534,15 @@ input[type=number] {
 }
 
 .close-button {
-  margin-right: -18px;
-  margin-left: 124px;
   width: 52px;
   height: 52px;
   border: none;
   border-radius: 50%;
   box-sizing: border-box;
   background-color: #F2F2F2;
+  position: absolute;
+  top:64px;
+  right:52px;
 }
 
 .send-modal-form:hover {
